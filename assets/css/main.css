@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.appex-part{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+input{
+    outline: none;
+}
+header{
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.amazon-logo{
+    height: 100%;
+}
+.amazon-logo:hover{
+    border: 1px solid white;
+}
+.location-country{
+    display: flex;
+    align-items: center;
+}
+.bi-geo-alt{
+    color: white;
+}
+#btn-choice{
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    animation-name: go;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 5px;
+    padding: 3px;
+}
+@keyframes go {
+    to{
+        background-color: gray;
+    }
+}
+.location-country:hover{
+    border: 1px solid white;
+}
+.box-registr{
+    width: 250px;
+    height: 200px;
+    box-shadow: 0px 5px 15px 0px gray ;
+    border-radius: 7px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    display: none;
+}
+.box-add{
+    display: flex;
+}
+
+.sign-box{
+    width: 90%;
+    height: 15px;
+    border-radius: 7px;
+    background-color: yellow;
+}
+#btn-apply{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+#selection-countries{
+    width: 90%;
+    border-radius: 7px;
+    box-shadow: 0px 5px 10px 2px gray;
+    outline: none;
+}
+
+.btn-done{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 12px 0px 0px ;
+}
+#btn-complete{
+    background-color: yellow;
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+#btn-complete:hover{
+    background-color: yellowgreen;
+    transition: 1s;
+}
+#btn-complete:active{
+box-shadow: 0px 0px 0px 3px rgb(193, 193, 2);
+    transition: none;
+}
+.header-search-box{
+    display: flex;
+    align-items: center;
+    border: none;
+
+}
+
+#choices-of-quality{
+    height: 70%;
+    outline: none;
+    border: none;
+}
+.search-header{
+    height: 70%;
+}
+.search-icon-box{
+    height: 70%;
+    width: 30px;
+    background-color: orangered;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-icon-box:hover{
+    background-color: orange;
+    transition: 1s;
+    cursor: pointer;
+}
+.language-option-box{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.language-option-box:hover{
+    border: 1px solid white;
+}
+.flag{
+    height: 35%;
+}
+.bi-arrow-down-short{
+    color: white; cursor: pointer;
+}
+.illustration-language{
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    display: none;
+}
+.language-choice{
+    width: 100px;
+    background-color: white;
+    height: 100px;
+    border: 1px solid black;
+    bottom: -100px;
+    left: -10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 7px;
+    position: absolute;
+}
+
+.language-items{
+    display: flex;
+}
+.accounts-option-box:hover{
+border: 1px solid white;
+}
+.box-order-list:hover{
+    border: 1px solid white;
+    }
+    .cart-box{
+        display: flex;
+        align-items: center;
+    }
+    .bi-cart3{
+        color: white;
+    }
+    .cart{
+        color: white;
+    }
+.cart-box:hover{
+border: 1px solid white;
+}
+    .header-low{
+    width: 100%;
+    height: 20px;
+    background-color: lightslategray;
+    display: flex;
+    position: relative;
+}
+
+.navbar-box{
+    height: 100vh;
+    width: 60%;
+    background-color: black;
+left: -60%;
+position: absolute;
+transition: 1s;
+}
+.nav-active{
+    left: 0;
+}
+.close-btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-box{
+    display: flex;
+    justify-content: space-around;
+}
+#total-input{
+    background-color: black;
+    color: white;
+    width: 10px;
+    border: none;
+    outline: none;
+}
+
+
+
+.goods-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.goods-box > div{
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.stars{
+    cursor: pointer;
+}
+.goods-box > div > img{
+    height: 100%;
+    object-fit: contain;
+    width: 300px;
+    height: 100px;
+}
+.goods-box  div > button{
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+.goods-box  div > button:hover{
+transition: 1s;
+    background-color: aqua;
+cursor: pointer;
+}
+.goods-box  div > button:active{
+    transition: none;
+    box-shadow: 0px 0px 0px 2px aqua;
+    }    
+.first-equipment-box:hover .rating-box-vector{
+    display: flex;
+}
+.second-equipment-box:hover .rating-box-vector{
+    display: flex;
+}
+.third-equipment-box:hover .rating-box-vector{
+    display: flex;
+}
+.rating-box-vector{
+    position: absolute;
+
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+.vector-rating{
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 14px solid rgb(199, 199, 199);
+    width: 0;
+    height: 0;
+}
+.rating{
+    width: 200px;
+    height: 150px;
+    border: 1px solid gray;
+    border-radius: 7px ;
+    box-shadow: 3px 1px 15px 0px gray;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.rating > div{
+    margin-top: 10px;
+}
+.rating span{
+    color: dodgerblue;
+}
+.statisticks{
+    height: 20px;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+}
+.inside-results{
+    height: 100%;
+    animation-name: n;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+animation-delay: 1s;
+}
+@keyframes n {
+    0%{
+background-color: red;
+width: 0%;
+    }
+    30%{
+        background-color: orangered;
+width: 40%;
+    }
+    70%{
+        background-color: yellow;
+width: 70%;
+    }
+        100%{
+        background-color: yellowgreen;
+width: 80%;
+    }
+
+}
