@@ -71,3 +71,11 @@ btnTwo.addEventListener('click', () => {
 btnThree.addEventListener('click', () => {
     total.value = +total.value +1
 })
+const imgEl = document.querySelectorAll(".product")
+fetch("https://shrouded-ocean-24719.herokuapp.com/v2/allproducts")
+.then(data => data.json())
+.then(malumot => {
+        imgEl.forEach(e => {
+        e.src = malumot.url 
+    });
+})
